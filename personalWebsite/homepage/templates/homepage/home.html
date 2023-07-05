@@ -1,15 +1,45 @@
 <!DOCTYPE html>
-{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'homepage/styles.css'%}">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'homepage/styles.css' %}"/>
     <title>Home</title>
 </head>
-<body>
-    <h1>Home Page</h1>
-    
-</body>
+    <body>
+        
+        <nav>
+            <div class="navbar-left">
+                <a class="active" href="{% url 'home' %}">GEORGETAIT.COM</a>
+            </div>
+            <div class="navbar-right">
+                <div class="dropdown">
+                    <button class="dropbtn">Projects</button>
+
+                    <div class="dropdown-content">
+                        <a class="dropdown-item" href="#">Degree Score</a>
+                        <a class="dropdown-item" href="#">Expenses Automator</a>
+                        <a class="dropdown-item" href="#">Data Structures</a>
+                        <a class="dropdown-item" href="#">Modelling Home</a>
+                    </div>
+                </div>
+                
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+            </div>
+        </nav>
+
+        <div class="emp">
+            <h1 class="text-bold">WELCOME</h1>
+        </div>
+
+        <div class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+        
+            
+        
+       
+    </body>
 </html>
